@@ -4,7 +4,7 @@ spring:
     host: smtp.gmail.com  # Suggests valid properties like 'host'
     port: 587              # Suggests valid values based on context
     username: ymzade2022@gmail.com
-    password: ankz lcny cglu qddq
+    password: ${spring.mail.password}     // you have to create a app password
     properties:
       mail:
         smtp:
@@ -16,3 +16,5 @@ spring:
     multipart:
       max-file-size: 20MB
       max-request-size: 20MB
+
+

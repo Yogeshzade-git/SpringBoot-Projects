@@ -16,12 +16,6 @@ public class MyMailSender {
     @Autowired
     private MailSenderService mailSenderService;
 
-//    @PostMapping("/send-mail")
-//    public ResponseEntity <String> sendMail(@RequestBody EmailRequest emailRequest){
-//        mailSenderService.sendMail(emailRequest);
-//        return new ResponseEntity<>("Email send Success", HttpStatus.OK);
-//    }
-
     @PostMapping("/send-mail")
     public ResponseEntity<String> sendmail(@RequestParam("to") String to,
                          @RequestParam("subject") String subject,
