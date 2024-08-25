@@ -1,0 +1,18 @@
+
+spring:
+  mail:
+    host: smtp.gmail.com  # Suggests valid properties like 'host'
+    port: 587              # Suggests valid values based on context
+    username: ymzade2022@gmail.com
+    password: ankz lcny cglu qddq
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 20MB
