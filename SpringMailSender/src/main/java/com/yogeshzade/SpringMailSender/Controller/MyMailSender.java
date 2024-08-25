@@ -28,11 +28,11 @@ public class MyMailSender {
                          @RequestParam("mailBody") String mailBody,
                          @RequestParam(value = "attachment", required = false) List<MultipartFile> attachment){
 
-        EmailRequest emailRequest = new EmailRequest();
-        emailRequest.setTo(to);
-        emailRequest.setSubject(subject);
-        emailRequest.setMailBody(mailBody);
-        emailRequest.setAttachment(attachment);
+                    EmailRequest emailRequest = new EmailRequest();
+                    emailRequest.setTo(to);
+                    emailRequest.setSubject(subject);
+                    emailRequest.setMailBody(mailBody);
+                    emailRequest.setAttachment(attachment);
 
         try {
             mailSenderService.sendMail(emailRequest);
